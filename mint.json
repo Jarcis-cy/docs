@@ -100,18 +100,23 @@
           "group": "xpoc",
           "icon": "raygun",
           "iconType": "duotone",
-          "pages": ["tools/xpoc/overview", "tools/subfinder/install", "tools/subfinder/usage","tools/subfinder/running"]
+          "pages": [
+            "tools/xpoc/BasicIntroduction",
+            "tools/xpoc/QuickStart",
+            "tools/xpoc/BasicFunction"
+          ]
         },
         {
           "group": "rad",
           "icon": "radiation",
           "iconType": "duotone",
-          "pages": ["tools/rad/overview", "tools/httpx/install", "tools/httpx/usage", "tools/httpx/running"]
+          "pages": ["tools/rad/Tutorials"]
         }
       ]
     }
   ],
   "footerSocials": {
-    "github": "https://github.com/chaitin/xray"
+    "github": "https://github.com/chaitin/xray",
+    "website": "https://stack.chaitin.com/poc/list"
   }
 }
