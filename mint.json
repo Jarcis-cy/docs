@@ -66,7 +66,7 @@
       "icon": "slack",
       "url": "https://stack.chaitin.com/tool/detail/1"
     }
-    
+
   ],
   "navigation": [
     {
@@ -78,14 +78,36 @@
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Tools",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "tools/index",
+        {
+          "group": "xray",
+          "icon": "starfighter-twin-ion-engine-advanced",
+          "iconType": "regular",
+          "pages": [
+            "tools/xray/BasicIntroduction",
+            "tools/xray/QuickStart",
+            "tools/xray/Scanning",
+            "tools/xray/Configuration",
+            "tools/xray/AdvancedUsage",
+            "tools/xray/QA",
+            "tools/xray/VersionComparison",
+            "tools/xray/Feedback"
+          ]
+        },
+        {
+          "group": "xpoc",
+          "icon": "raygun",
+          "iconType": "duotone",
+          "pages": ["tools/xpoc/overview", "tools/subfinder/install", "tools/subfinder/usage","tools/subfinder/running"]
+        },
+        {
+          "group": "rad",
+          "icon": "radiation",
+          "iconType": "duotone",
+          "pages": ["tools/rad/overview", "tools/httpx/install", "tools/httpx/usage", "tools/httpx/running"]
+        }
       ]
     }
   ],
