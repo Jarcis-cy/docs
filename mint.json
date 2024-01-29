@@ -50,6 +50,11 @@
       "url": "help"
     }
   ],
+  "feedback": {
+    "thumbsRating": true,
+    "suggestEdit": true,
+    "raiseIssue": true
+  },
   "anchors": [
     {
       "name": "官网",
@@ -89,7 +94,16 @@
             "tools/xray/QuickStart",
             "tools/xray/Scanning",
             "tools/xray/Configuration",
-            "tools/xray/AdvancedUsage",
+            {
+              "group": "高级用法",
+              "pages": [
+                "tools/xray/advanced/reverse",
+                "tools/xray/advanced/ssrf",
+                "tools/xray/advanced/burp",
+                "tools/xray/advanced/awvs",
+                "tools/xray/advanced/webhook"
+              ]
+            },
             "tools/xray/QA",
             "tools/xray/VersionComparison",
             "tools/xray/Feedback"
