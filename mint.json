@@ -82,7 +82,7 @@
       ]
     },
     {
-      "group": "Tools",
+      "group": "工具",
       "pages": [
         "tools/xray/QuickStart",
         {
@@ -128,13 +128,45 @@
       ]
     },
     {
-      "group": "Plugins",
+      "group": "插件介绍",
       "pages": [
-        "plugins/index"
+        "plugins/Index",
+        "plugins/Usage",
+        "plugins/QuickStart",
+        "plugins/Environment"
       ]
     },
     {
-      "group": "Standard",
+      "group": "YAML",
+      "pages": [
+        "plugins/yaml/Format"
+      ]
+    },
+    {
+      "group": "GO",
+      "pages": [
+        "plugins/go/Index"
+      ]
+    },
+    {
+      "group": "最佳实践",
+      "pages": [
+        {
+          "group": "POC",
+          "pages": [
+            "plugins/practice/poc/Template"
+          ]
+        },
+        {
+          "group": "Fingerprint",
+          "pages": [
+            "plugins/practice/finger/Template"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "标准",
       "pages": [
         "standard/index"
       ]
