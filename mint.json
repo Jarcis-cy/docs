@@ -139,7 +139,14 @@
     {
       "group": "YAML",
       "pages": [
-        "plugins/yaml/Format"
+        "plugins/yaml/Format",
+        "plugins/yaml/YAMLScriptV2",
+        {
+          "group": "高级用法",
+          "pages": [
+            "plugins/yaml/advanced/Set"
+          ]
+        }
       ]
     },
     {
