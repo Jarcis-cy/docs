@@ -166,7 +166,8 @@
         {
           "group": "POC",
           "pages": [
-            "plugins/practice/poc/Template"
+            "plugins/practice/poc/Template",
+            "plugins/practice/poc/Example"
           ]
         },
         {
