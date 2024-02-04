@@ -144,7 +144,11 @@
         {
           "group": "高级用法",
           "pages": [
-            "plugins/yaml/advanced/Set"
+            "plugins/yaml/advanced/Set",
+            "plugins/yaml/advanced/Payloads",
+            "plugins/yaml/advanced/Rules",
+            "plugins/yaml/advanced/Details",
+            "plugins/yaml/advanced/Escape"
           ]
         }
       ]
