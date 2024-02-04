@@ -150,7 +150,8 @@
             "plugins/yaml/advanced/Details",
             "plugins/yaml/advanced/Escape"
           ]
-        }
+        },
+        "plugins/yaml/YAMLTypeFunc"
       ]
     },
     {
