@@ -44,10 +44,12 @@ Compose 是用于定义和运行多容器 Docker 应用程序的工具。通过 
 
 在搭建好docker-compose后，执行
 
-`git clone https://github.com/vulhub/vulhub.git`
-`cd vulhub/grafana/CVE-2021-43798/`
-`docker-compose up -d`
-`docker ps`
+```bash
+git clone https://github.com/vulhub/vulhub.git
+cd vulhub/grafana/CVE-2021-43798/
+docker-compose up -d
+docker ps
+```
 
 然后就可以查看到启动的端口，这个时候要注意，如果是使用云服务器搭建的话，请前往控制台将对应端口开放，否则无法对该端口进行访问。
 同时，记得及时关闭靶场环境，不要给坏人可乘之机。

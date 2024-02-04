@@ -167,7 +167,20 @@
           "group": "POC",
           "pages": [
             "plugins/practice/poc/Template",
-            "plugins/practice/poc/Example"
+            "plugins/practice/poc/Example",
+            {
+              "group": "高质量规范",
+              "pages": [
+                "plugins/practice/poc/HighQuality",
+                "plugins/practice/poc/Unauth",
+                "plugins/practice/poc/PathTraversal",
+                "plugins/practice/poc/RemoteCommandExecution",
+                "plugins/practice/poc/RemoteCodeExecution",
+                "plugins/practice/poc/FileUpload",
+                "plugins/practice/poc/SQLInjection",
+                "plugins/practice/poc/Question"
+              ]
+            }
           ]
         },
         {
