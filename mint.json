@@ -38,10 +38,6 @@
       "url": "plugins"
     },
     {
-      "name": "标准",
-      "url": "standard"
-    },
-    {
       "name": "激励计划",
       "url": "excitation"
     },
@@ -151,7 +147,8 @@
             "plugins/yaml/advanced/Escape"
           ]
         },
-        "plugins/yaml/YAMLTypeFunc"
+        "plugins/yaml/YAMLTypeFunc",
+        "plugins/yaml/Fix"
       ]
     },
     {
@@ -178,6 +175,9 @@
                 "plugins/practice/poc/RemoteCodeExecution",
                 "plugins/practice/poc/FileUpload",
                 "plugins/practice/poc/SQLInjection",
+                "plugins/practice/poc/SSRF",
+                "plugins/practice/poc/Redirect",
+                "plugins/practice/poc/XSS",
                 "plugins/practice/poc/Question"
               ]
             }
@@ -189,12 +189,6 @@
             "plugins/practice/finger/Template"
           ]
         }
-      ]
-    },
-    {
-      "group": "标准",
-      "pages": [
-        "standard/index"
       ]
     },
     {
