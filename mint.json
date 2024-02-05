@@ -126,8 +126,8 @@
     {
       "group": "插件介绍",
       "pages": [
-        "plugins/Index",
         "plugins/Usage",
+        "plugins/Index",
         "plugins/QuickStart",
         "plugins/Environment"
       ]
@@ -194,7 +194,8 @@
     {
       "group": "Excitation",
       "pages": [
-        "excitation/index"
+        "excitation/reward",
+        "excitation/contribute"
       ]
     },
     {
