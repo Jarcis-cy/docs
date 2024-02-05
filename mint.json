@@ -25,7 +25,7 @@
     }
   ],
   "topbarCtaButton": {
-    "name": "xray",
+    "type": "github",
     "url": "https://github.com/chaitin/xray"
   },
   "tabs": [
