@@ -39,9 +39,8 @@ title: '编写模板'
 
 ### 未授权类（Unauth）
 
-<Tabs>
-    <Tab title="基本示例">
-    ```yaml
+<CodeGroup>
+    ```yaml 基本示例
     name: poc-yaml-test-unauth
     manual: true
     transport: http
@@ -58,9 +57,7 @@ title: '编写模板'
       links:
         - https://www.test.com
     ```
-    </Tab>
-    <Tab title="Docker未授权访问">
-    ```yaml
+    ```yaml Docker未授权访问
     name: poc-yaml-docker-registry-api-unauth
     manual: true
     transport: http
@@ -86,16 +83,14 @@ title: '编写模板'
         - https://github.com/distribution/distribution/issues/877
         - https://askding.github.io/Kali/Exploit/Docker.html
     ```
-    </Tab>
 
-</Tabs>
+</CodeGroup>
 
 ### 文件读取类（File read）
 #### 系统文件（System file）
 
-<Tabs>
-    <Tab title="基本示例">
-    ```yaml
+<CodeGroup>
+    ```yaml 基本示例
     name: poc-yaml-test
     manual: true
     transport: http
@@ -118,9 +113,7 @@ title: '编写模板'
       links:
         - https://www.test.com
     ```
-    </Tab>
-    <Tab title="EWebs">
-    ```yaml
+    ```yaml EWebs
     name: poc-yaml-ewebs-fileread
     manual: true
     transport: http
@@ -140,14 +133,12 @@ title: '编写模板'
       links:
         - https://www.yuque.com/peiqiwiki/peiqi-poc-wiki/lzqqz4
     ```
-    </Tab>
-</Tabs>
+</CodeGroup>
 
 #### 网站配置文件（Website Configuration）
 
-<Tabs>
-    <Tab title="基本示例">
-    ```yaml
+<CodeGroup>
+    ```yaml 基本示例
     name: poc-yaml-test
     manual: true
     transport: http
@@ -165,9 +156,7 @@ title: '编写模板'
       links:
         - https://www.test.com
     ```
-    </Tab>
-    <Tab title="CVE-2021-26086">
-    ```yaml
+    ```yaml CVE-2021-26086
     name: poc-yaml-jira-cve-2020-29453-fileread
     manual: true
     transport: http
@@ -193,16 +182,13 @@ title: '编写模板'
         - https://jira.atlassian.com/browse/JRASERVER-72014
         - https://nvd.nist.gov/vuln/detail/CVE-2020-29453
     ```
-    </Tab>
-
-</Tabs>
+</CodeGroup>
 
 ### RCE类
 #### 代码执行 (Code Execution)
 
-<Tabs>
-    <Tab title="基本示例">
-    ```yaml
+<CodeGroup>
+    ```yaml 基本示例
     name: poc-yaml-test-php-rce
     manual: true
     transport: http
@@ -225,8 +211,7 @@ title: '编写模板'
       links:
         - https://test.com
     ```
-    </Tab>
-    <Tab title="CVE-2012-1823">
+
     ```yaml CVE-2012-1823
     name: poc-yaml-php-cgi-cve-2012-1823-rce
     manual: true
@@ -250,8 +235,7 @@ title: '编写模板'
       links:
         - https://github.com/vulhub/vulhub/tree/master/php/CVE-2012-1823
     ```
-    </Tab>
-    <Tab title="Spring-Cloud SPEL">
+    Spring-Cloud SPEL">
     ```yaml
     name: poc-yaml-spring-cloud-function-spel-rce
     manual: true
@@ -280,9 +264,8 @@ title: '编写模板'
       AffectedVersion: 3.2.2
       description: spring cloud function <= 3.2.2 会对特定的header进行SPEL解析,导致RCE
     ```
-    </Tab>
 
-</Tabs>
+</CodeGroup>
 
 在随机数过小的情况下，可能还是会出现误报，所以，请在适当的时候，活用`bstartsWith`方法或者尝试匹配**网页中的其他特征**。
 
@@ -290,9 +273,9 @@ title: '编写模板'
 
 #### 命令执行 (Command Execution)
 
-<Tabs>
-    <Tab title="基本示例">
-    ```yaml
+<CodeGroup>
+
+    ```yaml 基本示例
     name: poc-yaml-test-rce
     manual: true
     transport: http
@@ -358,9 +341,8 @@ title: '编写模板'
       links:
         - http://test.com
     ```
-    </Tab>
-    <Tab title="蓝海卓越">
-    ```yaml
+
+    ```yaml 蓝海卓越
     name: poc-yaml-langhezhuoyuejifei-debug-rce
     manual: true
     transport: http
@@ -424,9 +406,8 @@ title: '编写模板'
       links:
         - https://github.com/Threekiii/Awesome-POC/blob/master/Web%E5%BA%94%E7%94%A8%E6%BC%8F%E6%B4%9E/%E8%93%9D%E6%B5%B7%E5%8D%93%E8%B6%8A%E8%AE%A1%E8%B4%B9%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%20debug.php%20%E8%BF%9C%E7%A8%8B%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E.md
     ```
-    </Tab>
-    <Tab title="CVE-2021-42071">
-    ```yaml
+
+    ```yaml CVE-2021-42071
     name: poc-yaml-visual-tools-dvr-vx16-cve-2021-42071
     manual: true
     transport: http
@@ -447,15 +428,14 @@ title: '编写模板'
       links:
         - https://www.exploit-db.com/exploits/50098
     ```
-    </Tab>
 
-</Tabs>
+</CodeGroup>
 
 #### 无回显RCE
 
-<Tabs>
-    <Tab title="基本示例">
-    ```yaml
+<CodeGroup>
+
+    ```yaml 基本示例
     name: poc-yaml-test
     manual: true
     transport: http
@@ -484,9 +464,8 @@ title: '编写模板'
       links:
         - http://test.com
     ```
-    </Tab>
-    <Tab title="CVE-2022-0591(cURL/Wget)">
-    ```yaml
+
+    ```yaml CVE-2022-0591(cURL/Wget)
     name: poc-yaml-spiderflow-save-remote-command-execute
     manual: true
     transport: http
@@ -511,9 +490,8 @@ title: '编写模板'
       links:
         - https://github.com/GREENHAT7/pxplan/blob/main/goby_pocs/SpiderFlow_save__remote_code.json
     ```
-    </Tab>
-    <Tab title="CVE-2018-1335(Ping)">
-    ```yaml
+
+    ```yaml CVE-2018-1335(Ping)
     name: poc-yaml-tika-cve-2018-1335-rce
     manual: true
     transport: http
@@ -541,9 +519,8 @@ title: '编写模板'
       links:
         - https://www.exploit-db.com/exploits/46540
     ```
-    </Tab>
-    <Tab title="蓝凌OA(Certutils)">
-    ```yaml
+
+    ```yaml 蓝凌OA(Certutils)
     name: poc-yaml-landray-oa-datajson-rce
     manual: true
     transport: http
@@ -569,16 +546,15 @@ title: '编写模板'
       links:
         - https://www.cnsuc.net/thread-553.htm
     ```
-    </Tab>
 
-</Tabs>
+</CodeGroup>
 
 ### SQL注入类
 #### 普通注入（Ordinary injection）
 
-<Tabs>
-    <Tab title="基本示例">
-    ```yaml
+<CodeGroup>
+
+    ```yaml 基本示例
     name: poc-yaml-test-sqli
     manual: true
     transport: http
@@ -598,9 +574,8 @@ title: '编写模板'
       links:
         - https://www.test.com
     ```
-    </Tab>
-    <Tab title="CVE-2020-22211(MD5/Hash)">
-    ```yaml
+
+    ```yaml CVE-2020-22211(MD5/Hash)
     name: poc-yaml-74cms-cve-2020-22211-sqli
     manual: true
     transport: http
@@ -620,9 +595,8 @@ title: '编写模板'
       links:
         - https://github.com/blindkey/cve_like/issues/13
     ```
-    </Tab>
-    <Tab title="CVE-2019-16997(数值运算)">
-    ```yaml
+
+    ```yaml CVE-2019-16997(数值运算)
     name: poc-yaml-metinfo-cve-2019-16997-sqli
     manual: true
     transport: http
@@ -646,15 +620,14 @@ title: '编写模板'
       links:
         - https://y4er.com/post/metinfo7-sql-tips/#sql-injection-2
     ```
-    </Tab>
 
-</Tabs>
+</CodeGroup>
 
 #### 报错注入（Error injection）
 
-<Tabs>
-    <Tab title="基本示例">
-    ```yaml
+<CodeGroup>
+
+    ```yaml 基本示例
     name: poc-yaml-test-sqli
     manual: true
     transport: http
@@ -674,9 +647,8 @@ title: '编写模板'
       links:
         - https://www.test.com
     ```
-    </Tab>
-    <Tab title="CVE-2018-6893">
-    ```yaml
+
+    ```yaml CVE-2018-6893
     name: poc-yaml-finecms-cve-2018-6893
     manual: true
     transport: http
@@ -696,16 +668,15 @@ title: '编写模板'
       links:
         - https://xz.aliyun.com/t/2050
     ```
-    </Tab>
 
-</Tabs>
+</CodeGroup>
 
 
 #### 布尔盲注（Bool）
 
-<Tabs>
-    <Tab title="基本示例">
-    ```yaml
+<CodeGroup>
+
+    ```yaml 基本示例
     name: poc-yaml-test
     manual: true
     transport: http
@@ -740,9 +711,8 @@ title: '编写模板'
       links:
         - https://www.test.com
     ```
-    </Tab>
-    <Tab title="CVE—2022-29383">
-    ```yaml CVE—2022-29383
+
+    ```yaml CVE-2022-29383
     name: poc-yaml-netgear-ssl-vpn-20211222-cve-2022-29383
     manual: true
     transport: http
@@ -777,15 +747,14 @@ title: '编写模板'
       links:
         - https://github.com/badboycxcc/Netgear-ssl-vpn-20211222-CVE-2022-29383
     ```
-    </Tab>
 
-</Tabs>
+</CodeGroup>
 
 #### 时间盲注（Time）
 
-<Tabs>
-    <Tab title="基本示例">
-    ```yaml
+<CodeGroup>
+
+    ```yaml 基本示例
     name: poc-yaml-test-sqli
     manual: true
     transport: http
@@ -821,9 +790,8 @@ title: '编写模板'
       links:
         - http://test.com
     ```
-    </Tab>
-    <Tab title="CVE-2023-23488">
-    ```yaml
+
+    ```yaml CVE-2023-23488
     name: poc-yaml-wordpress-paid-memberships-pro-cve-2023-23488-sqli
     manual: true
     transport: http
@@ -859,9 +827,8 @@ title: '编写模板'
       links:
         - https://www.tenable.com/cve/CVE-2023-23488
     ```
-    </Tab>
 
-</Tabs>
+</CodeGroup>
 
 ### SSRF/URL跳转类
 目前暂时推荐使用example.com/example.org，后续会支持配置文件中动态获取
@@ -873,9 +840,9 @@ title: '编写模板'
 
 #### SSRF
 
-<Tabs>
-    <Tab title="基本示例">
-    ```yaml
+<CodeGroup>
+
+    ```yaml 基本示例
     name: poc-yaml-test-url
     manual: true
     transport: http
@@ -905,9 +872,8 @@ title: '编写模板'
       links:
         - http://test.com
     ```
-    </Tab>
-    <Tab title="CVE-2022-0591(特殊的反连地址)">
-    ```yaml
+
+    ```yaml CVE-2022-0591(特殊的反连地址)
     name: poc-yaml-wordpress-cve-2022-0591-ssrf
     manual: true
     transport: http
@@ -926,9 +892,8 @@ title: '编写模板'
       links:
         - https://wpscan.com/vulnerability/b5303e63-d640-4178-9237-d0f524b13d47
     ```
-    </Tab>
-    <Tab title="KK FileView(访问外部站点)">
-    ```yaml
+
+    ```yaml KKFileView(访问外部站点)
     name: poc-yaml-kkfileview-getcorsfile-ssrf
     manual: true
     transport: http
@@ -946,9 +911,8 @@ title: '编写模板'
       links:
         - https://github.com/kekingcn/kkFileView/issues/128
     ```
-    </Tab>
-    <Tab title="CVE-2017-9506(反连平台)">
-    ```yaml
+
+    ```yaml CVE-2017-9506(反连平台)
     name: poc-yaml-jira-cve-2017-9506-ssrf
     manual: true
     transport: http
@@ -970,9 +934,8 @@ title: '编写模板'
       links:
         - https://ecosystem.atlassian.net/browse/OAUTH-344
     ```
-    </Tab>
 
-</Tabs>
+</CodeGroup>
 
 
 ### 弱口令类（Weak password）
@@ -1024,9 +987,9 @@ detail:
 - 在上传的文件不能删除的情况下，可以选择继续上传一个同名空文件（请确保上传后的文件名称不被重命名），将原来的文件内容进行覆盖。
 - 但常规情况下，在上传php，jsp文件时，可以使用一些函数来将上传的文件删除，示例如下：
 
-<Tabs>
-    <Tab title="基本示例">
-    ```yaml
+<CodeGroup>
+
+    ```yaml 基本示例
     name: poc-yaml-test
         manual: true
         transport: http
@@ -1068,9 +1031,8 @@ detail:
           links:
             - https://test.com
     ```
-    </Tab>
-    <Tab title="万户文件上传">
-    ```yaml
+
+    ```yaml 万户文件上传
     name: poc-yaml-wanhuoa-upload-rce
         manual: true
         transport: http
@@ -1110,12 +1072,13 @@ detail:
           links:
             - https://test.com
     ```
-    </Tab>
 
-</Tabs>
+</CodeGroup>
 
 ### 账号/密码修改（Account/Password Change）
+
 此类漏洞建议使用版本匹配的方式，或者匹配其他特征的方式侧面验证漏洞的存在，不要直接执行删除请求，以防对测试目标造成损害。
+
 ### 特殊漏洞检测（Special vulnerability detection）
 #### 文件读取后，返回内容被编码（Content encoded）
 
