@@ -1,0 +1,19 @@
+name: Deploy xray Document
+on:
+  push:
+    branches:
+      - 'main'
+  pull_request:
+    types:
+      - closed
+jobs:
+  push:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v2
+      - uses: up9cloud/action-rsync@master
+        env:
+          HOST: 47.243.170.92
+          KEY: ${{secrets.DEPLOY_SSH_KEY}}
+          TARGET: /home/github/docs
+          ARGS: -avz --exclude=/.git/ --exclude=/.github/
